@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Serviços | Sepher Bereshit</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .wpp{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+    </style>
+
+
+    <!--   Favicon   -->
+       <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+       <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+</head>
+<body>
+    <!-- header -->
+    <header style="background-image: url('img/treinamento_background.jpg')">
+        <!-- container  -->
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Servicos</a>
+                    <a href="calculadora.html">Calculadora Solar</a>
+                    <a href="treinamento.html">Treinamento</a>
+                    <a href="contato.html" class="btn">Contato</a>
+                    
+                    <div class="close-icon" onclick="closeMenu() ">
+                        <i class="fa fa-times-circle"></i>
+
+                    </div>
+                    
+
+                </ul>
+                <div class="menu-icon" onclick="openMenu() ">
+                    <i class="fa fa-bars"></i>
+
+                </div>
+            </nav>
+            
+        </div> 
+        <!-- end container -->
+
+        <div id="languages" style="
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2%;">
+            <a href="" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/BR/shiny/64.png" ></a>
+            <a href="treinamento.en.html" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/US/shiny/64.png"></a>
+            <a href="treinamento.il.html" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/IL/shiny/64.png"></a>
+        </div>
+
+        <section class="banner">
+            <div class="banner-text">
+                <h1>Treinamento Online</h1>                                
+            </div>
+        </section>
+        
+    </header>
+    <!-- end header -->
+     
+    <!-- section servicos -->
+    <section class="servicos">
+        <div class="container">
+            <!-- Serviços Desenvolvedor -->
+            <h3>Objetivo do treinamento</h3>
+            <p class="desc_train">O treinamento em comissionamento em usinas fotovoltaicas tem como objetivo explanar 
+                intuitivamente, bem como exemplificar a forma dos ensaios elétricos e sua importância 
+                para o bom funcionamento e performance dos equipamentos.</p>
+            
+
+            <!-- Serviços Engenheiro Elétrico -->
+            <h3 class="train_est">Estrutura do treinamento</h3>
+            
+            
+            <div class="rows-cards">
+                <!-- row card item 1 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;
+                     ">
+                    <p class="nome-servico" style="text-align: center;"><strong>Módulo 1 </strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 13px;"><strong>DTR - Medidor de Relação de Espiras</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>Introdução ao DTR - Medidor de Relação de Espiras ;
+                        <li>Princípio de Funcionamento do DTR;
+                        <li>Componentes e Características do DTR;
+                        <li>Procedimento de Medição com o DTR;
+                        <li>Interpretação dos Resultados;
+                        <li>Cuidados e Segurança no Uso do DTR;
+                        <li>Estudos de Caso e Exemplos Práticos;
+                        <li>Conclusão
+                    </ol>
+                </div>
+                <!-- end row card item 1 -->
+                 
+                <!-- row card item 2 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>Módulo 2</strong></p>
+                    <p class="descricao-desenvolvedor" style="font-size: 11px; text-align: center;"><strong>Micro-ohmímetro – Medição de Resistência 
+                        de Contato e Resistência de Enrolamento</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>Introdução ao Micro-ohmímetro;
+                        <li>Princípio de Funcionamento do Micro-ohmímetro;
+                        <li>Medição de Resistência de Contato;
+                        <li>Medição de Resistência do Enrolamento;
+                        <li>Influências na Medição de Resistência;
+                        <li>Interpretação dos Resultados;
+                        <li>Segurança e Cuidados no Uso do Micro-ohmímetro;
+                        <li>Estudos de Caso e Exemplos Práticos;
+                        <li>Conclusão
+                    </ol>
+                </div>
+                <!-- end row card item 2 -->
+
+                <!-- row card item 3 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>Módulo 3</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 14px;"><strong>Megômetro – Medição de Resistência de 
+                        Isolamento</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>Introdução ao DTR - Medidor de Relação de Espiras ;
+                        <li>Princípio de Funcionamento do DTR;
+                        <li>Componentes e Características do DTR;
+                        <li>Procedimento de Medição com o DTR;
+                        <li>Interpretação dos Resultados;
+                        <li>Cuidados e Segurança no Uso do DTR;
+                        <li>Estudos de Caso e Exemplos Práticos;
+                        <li>Conclusão
+                    </ol>
+                </div>
+                <!-- end row card item 3 -->
+
+                <!-- row card item 4 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>Módulo 4</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 13px;"><strong>Mala de Injeção de Corrente – Testes de Proteção e Calibração de Relés</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>Introdução à Mala de Injeção de Corrente;
+                        <li>Princípio de Funcionamento da Mala de Injeção de Corrente;
+                        <li>Aplicações da Mala de Injeção de Corrente;
+                        <li>Procedimento de Teste com a Mala de Injeção de Corrente;
+                        <li>Tipos de Testes Realizados com Mala de Injeção de Corrente;
+                        <li>Interpretação dos Resultados;
+                        <li>Fatores que Influenciam a Medição;
+                        <li>Segurança no Uso da Mala de Injeção de Corrente;
+                        <li>Estudos de Caso e Exemplos Práticos;
+                        <li>Conclusão
+                    </ol>
+                </div>
+                 <!-- end row card item 4 -->
+
+                 <!-- row card item 5 -->
+                 <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>Módulo 5</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 14px;"><strong>Oscilógrafia – Registro e Diagnóstico de Eventos Elétricos</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>Introdução à Oscilógrafia;
+                        <li>Princípio de Funcionamento do Oscilógrafo;
+                        <li>Aplicações da Oscilógrafia;
+                        <li>Tipos de Oscilógrafos;
+                        <li>Procedimento de Medição com Oscilógrafo;
+                        <li>Interpretação de Resultados;
+                        <li>Fatores que Influenciam a Qualidade dos Dados
+                        <li>Segurança no Uso do Oscilógrafo;
+                        <li>Estudos de Caso e Exemplos Práticos
+                        <li>Conclusão
+                    </ol>
+                </div>
+                 <!-- end row card item 5 -->
+
+
+            </div>
+                
+                <!-- End Serviços Engenheiro Elétrico -->
+               <!-- end rows cards -->
+        </div>
+                
+            
+    </section>
+                <!-- end section servicos -->
+
+    
+    <section class="dados">
+        <div class="container">
+            <!-- dados item 1 -->
+            <div class="dados-item">
+                <img src="img/cloud.png" alt="">
+                <p>
+                    <strong>+360</strong> <br>
+                    Projetos concluídos
+                </p>
+            </div>
+            <!-- end dados item 1 -->
+
+            <!-- dados item 2 -->
+            <div class="dados-item">
+                <img src="img/manager.png" alt="">
+                <p>
+                    <strong>+6</strong> <br>
+                    Anos na área
+                </p>
+            </div>
+            <!-- end dados item 2 -->
+
+            <!-- dados item 3 -->
+            <div class="dados-item">
+                <img src="img/trophy.png" alt="">
+                <p>
+                    <strong>+890</strong> <br>
+                    Clientes satisfeitos
+                </p>
+            </div>
+            <!-- end dados item 3 -->
+
+            <!-- dados item 4 -->
+            <div class="dados-item">
+                <img src="img/layer.png" alt="">
+                <p>
+                    <strong>+254</strong> <br>
+                    Publicidades
+                </p>
+            </div>
+            <!-- end dados item 4 -->
+        </div>
+    </section>
+
+         <!-- footer -->
+         <footer class="footer">
+            <div class="container">
+                <div class="links">                 
+                    <a href="https://www.linkedin.com/company/sepher-bereshit-energy/"> <i class="fa fa-linkedin" ></i>
+                    </a>
+                </div>
+                <p><strong>Sepher Bereshit  &copy;2024 ||  Fernando Neto - codewave </strong></p>
+                <div class="links">
+                    <a href="https://www.instagram.com/_fernando0o__/"> <i class="fa fa-instagram" ></i>
+                    </a>
+                    <a href="www.linkedin.com/in/fernand0neto"> <i class="fa fa-linkedin" ></i>
+                    </a>
+                </div>
+            </div>
+
+
+         </footer>
+         <!-- end footer -->
+   
+         <div class="wpp">
+
+            <a href="https://wa.me/5535997283740" target="_blank">
+                <img src="img/wpp.png" width="150" alt="Fale Conosco pelo WhatsApp" title="Fale Conosco pelo WhatsApp">
+            </a>
+    
+            <!--<a href="https:wa.me/5535997283740?text=Olá, gostaria de tirar algumas dúvidas sobre a empresa, poderia me ajudar?" target="_blank">
+                
+            </a> -->
+        </div>    
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Sepher Bereshit</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .wpp{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+    </style>
+
+
+    <!--   Favicon   -->
+       <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+       <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+</head>
+<body>
+    <!-- header -->
+    <header style="background-image: url('img/treinamento_background.jpg')">
+        <!-- container  -->
+        <div class="container">
+            <nav>
+                <a href="home.il.html">
+                    <img src="img/logo1.png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="home.il.html">בַּיִת</a>
+                    <a href="sobre.il.html">אוֹדוֹת</a>
+                    <a href="servicos.il.html">שירותים</a>
+                    <a href="calculadora.il.html">מחשבון סולארי</a>
+                    <a href="treinamento.il.html">הַדְרָכָה</a>
+                    <a href="contato.il.html" class="btn">מַגָע</a>
+                    
+                    <div class="close-icon" onclick="closeMenu() ">
+                        <i class="fa fa-times-circle"></i>
+
+                    </div>
+                    
+
+                </ul>
+                <div class="menu-icon" onclick="openMenu() ">
+                    <i class="fa fa-bars"></i>
+
+                </div>
+            </nav>
+            
+        </div> 
+        <!-- end container -->
+
+        <div id="languages" style="
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2%;">
+            <a href="treinamento.html" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/BR/shiny/64.png" ></a>
+            <a href="treinamento.en.html" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/US/shiny/64.png"></a>
+            <a href="" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/IL/shiny/64.png"></a>
+        </div>
+
+        <section class="banner">
+            <div class="banner-text">
+                <h1>הדרכה מקוונת</h1>                                
+            </div>
+        </section>
+        
+    </header>
+    <!-- end header -->
+     
+    <!-- section Services -->
+    <section class="servicos">
+        <div class="container">
+            <!-- Services Developer -->
+            <h3>מטרת האימון</h3>
+            <p class="desc_train">הכשרה בהזמנה במפעלים פוטו-וולטאיים מטרתה להסביר 
+                באופן אינטואיטיבי, כמו גם דוגמה לצורת בדיקות החשמל וחשיבותן לתפקוד תקין וביצועים של הציוד.</p>
+            
+
+            <h3 class="train_est">מבנה אימון</h3>
+            
+            
+            <div class="rows-cards">
+                <!-- row card item 1 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;
+                     ">
+                    <p class="nome-servico" style="text-align: center;"><strong>מודול 1</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 13px;"><strong>DTR - מד יחס פניות</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>מבוא ל-DTR - מד יחס פניות;
+                        <li>עקרון העבודה של DTR;
+                        <li>DTR רכיבים ומאפיינים;
+                        <li>נוהל מדידה עם ה-DTR;
+                        <li>פרשנות תוצאות;
+                        <li>טיפול ובטיחות בעת שימוש ב-DTR;
+                        <li>מקרי מקרים ודוגמאות מעשיות;
+                        <li>מַסְקָנָה
+                    </ol>
+                </div>
+                <!-- end row card item 1 -->
+                 
+                <!-- row card item 2 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>מודול 2</strong></p>
+                    <p class="descricao-desenvolvedor" style="font-size: 11px; text-align: center;"><strong>מד מיקרו אוהם – מדידת התנגדות התנגדות מגע ופיתול</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>מבוא ל- מיקרו-אוהםמטר;
+                        <li>מד מיקרו אוהם עקרון עבודה;  
+                        <li>מדידת התנגדות למגע;
+                        <li>מדידת התנגדות מתפתל;
+                        <li>השפעות על מדידת התנגדות;
+                        <li>פרשנות של תוצאות;
+                        <li>בטיחות וטיפול בשימוש במיקרו-אוהםמטר;
+                        <li>מקרי מקרים ודוגמאות מעשיות;
+                        <li>מַסְקָנָה
+                    </ol>
+                </div>
+                <!-- end row card item 2 -->
+
+                <!-- row card item 3 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>מודול 3</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 14px;"><strong>מגר – בידוד מדידת התנגדות</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>מבוא ל-DTR - מד יחס פניות;
+                        <li>עקרון העבודה של DTR;
+                        <li>DTR רכיבים ומאפיינים;
+                        <li>נוהל מדידה עם ה-DTR;
+                        <li>פרשנות תוצאות;
+                        <li>טיפול ובטיחות בעת שימוש ב-DTR;
+                        <li>מקרי מקרים ודוגמאות מעשיות;
+                        <li>מַסְקָנָה
+                    </ol>
+                </div>
+                <!-- end row card item 3 -->
+
+                <!-- row card item 4 -->
+                <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>מודול 4</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 13px;"><strong>מזוודת הזרקה נוכחית - בדיקות הגנה וכיול ממסר</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br><li>היכרות עם מזוודת ההזרקה הנוכחית;
+                        <li>עיקרון העבודה של מזוודת הזרקה נוכחית;
+                        <li>יישומי מזוודת הזרקה נוכחיים;
+                        <li>הליך בדיקה עם מזוודת ההזרקה הנוכחית;
+                        <li>סוגי בדיקות המבוצעות עם מזוודת הזרקה נוכחית;
+                        <li>פרשנות תוצאות;
+                        <li>גורמים המשפיעים על מדידה;
+                        <li>בטיחות בשימוש במזוודת ההזרקה הנוכחית;
+                        <li>מקרי מקרים ודוגמאות מעשיות;
+                        <li>מַסְקָנָה
+                    </ol>
+                </div>
+                 <!-- end row card item 4 -->
+
+                 <!-- row card item 5 -->
+                 <div class="row-card-item">
+                
+                    <img src="img/desenvolvedor.png" alt="" style=
+                    "width: 150px;
+                     margin-left: 10px;">
+                    <p class="nome-servico" style="text-align: center;"><strong>מודול 5</strong></p>
+                    <p class="descricao-desenvolvedor" style="text-align: center; font-size: 14px;"><strong>אוסצילוגרפיה - רישום ואבחון אירועי חשמל</strong> </p>       
+                    <ol class="lista-train" style="list-style-position: inside;
+                        margin-left: 14px;
+                        padding-left: -65px;
+                        padding-right: -65px;
+                        margin-left: 1px;">
+                        <br>
+                        <li>מבוא לאוסילוגרפיה;
+                        <li>עקרון העבודה של האוסילוגרף;
+                        <li>יישומים של אוסצילוגרפיה;
+                        <li>סוגי אוסילוגרפים;
+                        <li>הליך מדידה עם אוסילוגרף;
+                        <li>פרשנות תוצאות;
+                        <li>גורמים המשפיעים על איכות הנתונים
+                        <li>בטיחות בשימוש באוסילוגרף;
+                        <li>מקרי מקרים ודוגמאות מעשיות
+                        <li>מַסְקָנָה
+                    </ol>
+                </div>
+                 <!-- end row card item 5 -->
+
+
+            </div>
+                
+                <!-- End Serviços Engenheiro Elétrico -->
+               <!-- end rows cards -->
+        </div>
+                
+            
+    </section>
+                <!-- end section servicos -->
+
+    
+    <section class="dados">
+        <div class="container">
+            <!-- dados item 1 -->
+            <div class="dados-item">
+                <img src="img/cloud.png" alt="">
+                <p>
+                    <strong>+360</strong> <br>
+                    פרויקטים שהושלמו
+                </p>
+            </div>
+            <!-- end dados item 1 -->
+
+            <!-- dados item 2 -->
+            <div class="dados-item">
+                <img src="img/manager.png" alt="">
+                <p>
+                    <strong>+6</strong> <br>
+                    שנים בשטח
+                </p>
+            </div>
+            <!-- end dados item 2 -->
+
+            <!-- dados item 3 -->
+            <div class="dados-item">
+                <img src="img/trophy.png" alt="">
+                <p>
+                    <strong>+890</strong> <br>
+                    לקוחות מרוצים
+                </p>
+            </div>
+            <!-- end dados item 3 -->
+
+            <!-- dados item 4 -->
+            <div class="dados-item">
+                <img src="img/layer.png" alt="">
+                <p>
+                    <strong>+254</strong> <br>
+                    לְפַרְסֵם
+                </p>
+            </div>
+            <!-- end dados item 4 -->
+        </div>
+    </section>
+
+         <!-- footer -->
+         <footer class="footer">
+            <div class="container">
+                <div class="links">                 
+                    <a href="https://www.linkedin.com/company/sepher-bereshit-energy/"> <i class="fa fa-linkedin" ></i>
+                    </a>
+                </div>
+                <p><strong>Sepher Bereshit  &copy;2024 ||  Fernando Neto - codewave </strong></p>
+                <div class="links">
+                    <a href="https://www.instagram.com/_fernando0o__/"> <i class="fa fa-instagram" ></i>
+                    </a>
+                    <a href="www.linkedin.com/in/fernand0neto"> <i class="fa fa-linkedin" ></i>
+                    </a>
+                </div>
+            </div>
+
+
+         </footer>
+         <!-- end footer -->
+   
+        <div class="wpp">
+
+            <a href="https://wa.me/5535997283740" target="_blank">
+                <img src="img/wpp.png" width="150" alt="Fale Conosco pelo WhatsApp" title="Fale Conosco pelo WhatsApp">
+            </a>
+        </div>
+        
+<script src="js/script.js"></script>
+</body>
+</html>

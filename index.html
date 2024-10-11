@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>Sepher Bereshit</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .wpp{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 999;
+        }
+    </style>
+
+
+    <!--   Favicon   -->
+       <link rel="shortcut icon" href="img/android-chrome-512x512.png" type="image/x-icon">
+       <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+</head>
+<body>
+    <!-- header -->
+    <header class="home-background">
+        <!-- container  -->
+        
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo-main">
+                    <img src="img/logo1.png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Servicos</a>
+                    <a href="calculadora.html">Calculadora Solar</a>
+                    <a href="treinamento.html">Treinamento</a>
+                    <a href="contato.html" class="btn">Contato</a>
+                    
+                    <div class="close-icon" onclick="closeMenu() ">
+                        <i class="fa fa-times-circle"></i>
+
+                    </div>
+                    
+
+                </ul>
+                
+                <div class="menu-icon" onclick="openMenu() ">
+                    <i class="fa fa-bars"></i>
+
+                </div>
+            </nav>
+
+            
+
+        </div> 
+        <!-- end container -->
+
+        <div id="languages" style="
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2%;">
+            <a href="" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/BR/shiny/64.png" ></a>
+            <a href="home.en.html" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/US/shiny/64.png"></a>
+            <a href="home.il.html" style="
+            margin-right: 10px;
+            cursor: pointer;
+            padding: 1px 2px;"><img src="https://flagsapi.com/IL/shiny/64.png"></a>
+        </div>
+        
+    </header>
+
+    <section class="banner">
+                <div class="background-section">
+                    <video src="img/video.mp4" autoplay loop muted></video>
+                </div>
+                <div class="box">  
+                    <div class="banner-text">
+                        <h1>Sepher Bereshit</h1>
+                        <p>Soluções sustentáveis com inteligência</p>
+                    
+                    </div>
+                </div> 
+                
+                    
+                
+            </section>
+    <!-- end header -->
+     
+    <!-- Engenharia de Comissionamento -->
+    <section class="eng-comissionamento eng-comissionam" style="background-image: url(img/eng-comissionamento-home.jpg);">
+        <div class="info">
+            <h3 class="texto">Engenharia de Comissionamento</h3>
+            <a href="engComiss.html" class="btn" id="saiba-m">Saiba mais</a>
+        </div>
+    </section>
+    <!-- END Engenharia de Comissionamento -->
+
+    <!-- Engenharia Mecância de Soluções -->
+    <section class="eng-comissionamento eng-solucoes" style="background-image: url(img/eng-solucoes-home.jpg);">
+        <div class="info">
+            <h3>Engenharia Mecância de Soluções</h3>
+            <a href="eng-solucoes.html" class="btn" id="saiba-m">Saiba mais</a>
+        </div>
+    </section>
+    <!-- END Engenharia Mecância de Soluções -->
+
+    <!-- Engenharia de Desenvolvimento Tecnológico -->
+    <section class="eng-comissionamento eng-desenvolvimento" style="background-image: url(img/eng-desenvolvimento-home.jpg);">
+        <div class="info">
+            <h3>Engenharia de Desenvolvimento Tecnológico</h3>
+            <a href="eng-desenvolvimento.html" class="btn" id="saiba-m">Saiba mais</a>
+        </div>
+    </section>
+    <!-- END Engenharia de Desenvolvimento Tecnológico -->
+
+    <!-- Engenharia de Telecomunicações -->
+    <section class="eng-comissionamento eng-telecom" style="background-image: url(img/eng-telecom-home.jpg);">
+        <div class="info">
+            <h3>Engenharia de Telecomunicações</h3>
+            <a href="eng-telecom.html" class="btn" id="saiba-m">Saiba mais</a>
+        </div>
+    </section>
+    <!-- END Engenharia de Telecomunicações -->
+
+
+        <!-- clientes -->
+    <section class="clientes">
+       <div class="container">
+           <h3>Nossos Clientes</h3>
+           <p>Confira alguns dos nossos clientes.</p>
+           <div class="clientes">
+               <img class="cliente" src="img/grupo-energia.jpg" >
+               <img class="cliente" src="img/canadianSolar.jpg" >
+               <img class="cliente" src="img/atlas.jpg">
+               
+           </div>
+       </div>
+
+    </section>
+    
+
+        
+
+         <!-- footer -->
+         <footer class="footer">
+            <div class="container">
+                <div class="links">                 
+                    <a href="https://www.linkedin.com/company/sepher-bereshit-energy/"> <i class="fa fa-linkedin" ></i>
+                    </a>
+                </div>
+                <p><strong>Sepher Bereshit  &copy;2024 ||  Fernando Neto - codewave </strong></p>
+                <div class="links">
+                    <a href="https://www.instagram.com/_fernando0o__/"> <i class="fa fa-instagram" ></i>
+                    </a>
+                    <a href="www.linkedin.com/in/fernand0neto"> <i class="fa fa-linkedin" ></i>
+                    </a>
+                </div>
+            </div>
+
+
+         </footer>
+         <!-- end footer -->
+
+   
+    <div class="wpp">
+
+        <a href="https://wa.me/5535997283740" target="_blank">
+            <img src="img/wpp.png" width="150" alt="Fale Conosco pelo WhatsApp" title="Fale Conosco pelo WhatsApp">
+        </a>
+    </div>
+    
+<script src="js/script.js"></script>
+</body>
+</html>

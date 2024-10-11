@@ -1,0 +1,1247 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+
+
+body{
+    background-color: black;
+    
+}
+
+section{
+    padding: 54px 0;
+}
+
+h3{
+    font-size: 50px;
+}
+
+p{
+    color: #0000009c;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn{
+    background-color: #ffffff;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+
+.btn:hover{
+    background-color:  black;
+    color: white;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #4f9bf98a;
+    }
+    to{
+        outline: 15px solid #4f9bf900;
+        
+    }
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: #000000;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after{
+    width: 100%;
+}
+
+/* menu mobile */
+nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+}
+
+.menu-icon, .close-icon {
+    font-size: 2rem; /* Aumenta o tamanho para torná-lo mais clicável */
+}
+
+nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+/*
+#languages {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+#languages a {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 1px 2px;
+}
+*/
+.banner {          /* SECTION */
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.background-section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.background-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box {
+    position: relative;
+    z-index: 1;
+    bottom: -400px;
+}
+
+.banner-text h1{
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    
+    text-align: center;
+}
+
+.banner .box .banner-text h1 {
+    margin-bottom: 40px;
+}
+
+
+
+.eng-comissionamento {
+    height: 140vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eng-comissionamento .info {
+    margin-top: 400px;
+    color: white;
+    margin-left: 55px;
+    
+}
+
+.eng-comissionamento h3{
+    margin-bottom: 15px;
+    font-size: 35px;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.eng-comissionamento #saiba-m {
+    color: #FFF;
+    border: 2px solid rgba(0, 0, 0, 0.61);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    -webkit-transition: ease-out .5 s;
+    -moz-transition: ease-out .5s;
+    transition: ease-out .5s;
+    background-color: transparent;
+  }
+
+  .eng-comissionamento #saiba-m:hover {
+    box-shadow: inset 400px 0 0 0 white;
+    color: black;
+  }
+
+.depoimentos h3, p {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.depoimentos .card-item img{ /* mexer em todas imagens do depoimento de vez */
+    border-radius: 100%;
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-item{
+    background-color: #000000;
+    margin: 20px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.5s; 
+}
+
+.depoimentos .card-item p{
+    color: white;
+    cursor: default;
+}
+
+.depoimentos .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.7s;
+}
+
+.depoimentos .card-item .depoimento-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.7s;
+    margin-bottom: 15px;
+}
+
+.depoimentos .card-item .profissao{
+    font-size: 16px;
+    padding: 0 15px;
+    transition: .7s;
+}
+
+
+.depoimentos .card-item:hover{
+    background-color: #ffffff;
+    margin-top: -5px;
+}
+
+.depoimentos .card-item:hover .nome-user,
+.depoimentos .card-item:hover .depoimento-user,
+.depoimentos .card-item:hover .profissao {
+    color: black;
+}
+
+/* clientes */
+
+.clientes h3,
+.clientes p{
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.clientes .container .clientes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 990;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+/* footer */
+
+
+.footer{
+    background-color: black;
+    font-size: 20px;
+    justify-content: center;
+    height: 22vh;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-calc{
+    height: 30vh;
+    transition: 0;
+    bottom: 1px;
+}
+
+.footer i{
+    color: #ffffff;
+    background-color: black;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.footer i:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+/* pagina sobre */
+
+.sobre .sepher-text{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+    font-size: 17px;
+}
+
+
+.sobre .sepher-text {
+    font-size: 40px;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.sobre .sepher-text h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.sobre .sepher-text h4 {
+    margin-bottom: 40px;
+    color: white;
+}
+
+.sobre .sepher-text p{
+    font-size: 20px;
+    margin: 18px 0;
+    color: white;
+}
+
+.sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+.sobre .sobre-text{
+    width: 50%;
+    padding-right: 40px;
+}
+
+
+.container .sobre-text h3{
+    color:  white;
+}
+
+.sobre .sobre-text p{
+    margin: 18px 0;
+    color: white;
+    text-align: left;
+}
+
+.sobre .sobre-img{
+    width: 50%;
+}
+
+.sobre .sobre-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+.sobre .projetos h3, h4, p{
+    text-align: center;
+}
+
+.sobre .projetos h3{
+    margin-bottom: 60px;
+    font-size: 50px;
+}
+
+.sobre .projetos h4{
+    margin: 16px 0;
+    font-size: 30px;
+}
+
+.sobre .projetos p{
+    margin: 18px 60px 100px 60px;
+    font-size: 20px;
+}
+
+.sobre .projetos{
+    align-items: center;
+    text-align: center;
+    padding: -50px 100px 300px 100px;
+}
+.sobre .projetos img{
+    display: block;
+    margin: auto;
+    width: 600px;
+    border-radius: 10px;
+}
+
+/* end pagina sobre */
+/* Pagina servicos */
+.servicos h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 17px;
+}
+
+.servicos .container p{
+    text-align: center;
+    color: white;
+}
+
+.servicos .rows-cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.servicos .row-card-item{
+    background-color: black;
+    padding: 40px;
+    border-radius: 14px;
+    margin: 20px;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    margin-bottom: 100px;
+}
+
+.servicos .container .rows-cards .row-card-item {
+    width: 500px;
+}
+
+.servicos .container .rows-cards .row-card-item .lista-train li {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.servicos .row-card-item .lista{
+    margin-left: 14px;
+    color: white;
+}
+
+
+.servicos .row-card-item p{
+    text-align: left;
+    padding-top: 5px;
+    color: white;
+}
+
+.servicos .row-card-item:hover{
+    background-color: #ffffff;
+    .lista{
+        color: black;
+        transition: .5s;
+    }
+}
+
+.servicos .row-card-item:hover{
+    background-color: white;
+    .lista-train{
+        color: black;
+        transition: .5s;
+    }
+}
+
+.servicos .row-card-item ol{
+    color: white;
+}
+
+.servicos .row-card-item:hover p{
+    color: black;
+    transition: 0.8s;
+    cursor: default;
+}
+.servicos .row-card-item img{
+    background-color: #ffffff;
+    border-radius: 14px;
+    width: 100px;
+    padding: 9px;
+}
+
+/* end pagina servicos */
+
+
+/* dados */
+.dados{
+    background-color: white;
+}
+
+.dados .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dados .dados-item{
+    text-align: center;
+    margin-right: 60px;
+    color: black;
+}
+
+.dados .dados-item img{
+    background-color: #000000;
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 80px;
+}
+
+.dados .dados-item p{
+    font-size: 18px;
+    color: black;
+}
+
+.dados .dados-item p strong{
+    font-size: 28px;
+}
+/* end dados */
+/*Pagina de contatos */
+.contato-info{
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.contato-info .left-side{
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 14px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contato-info .left-side div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .left-side div i{
+    font-size: 20px;
+    margin-right: 15px;
+    color: black;
+}
+
+.contato-info .left-side .endereco-foto {
+    margin-bottom: 19px;
+}
+
+.contato-info .left-side .email-foto {
+    margin-bottom: 19px;
+}
+
+.contato-info .left-side .telefone-foto {
+    margin-bottom: 19px;
+}
+
+.contato-info .left-side p{
+    font-size: 17px;
+    color: black;
+}
+
+
+/* end pagina de contatos */
+
+.desc_train{
+    color: rgba(0, 0, 0, 0.753);
+    font-size: 18px;
+    margin-top: 15px;
+    margin: 50px;
+}
+
+.train_est{
+    font-size: 45px;
+}
+
+.body{
+    display: flex;
+}
+
+.calculadora-left {
+    width: 60%;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    
+}
+
+.calculadora-left .descricao {
+    font-size: 15px;
+    margin-top: 35px;
+    color: white;
+}
+
+.calculadora-right {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.calculadora-right .inputs {
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculadora-right .inputs #projeto {
+    height: 40px;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.calculadora-right .inputs #uf {
+    height: 40px;
+    font-size: 17px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.calculadora-right .inputs #cidade {
+    height: 40px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+.calculadora-right .inputs {
+    color: black;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.calculadora-right .descricao-right {
+    text-align: center;
+    color: white;
+}
+
+.calculadora-right .custo{
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.calculadora-right .custo .input-group-flex-nowrap .form-control{
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+
+#calculate {
+    margin-top: 15px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.5rem 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-left: 65px;
+}
+
+#calculate:hover {
+    color: white;
+    background-color: black;
+    transition: 1s;
+}
+
+.calculadora-right .calcular {
+    margin-top: 15px;
+    transition: 1s;
+}
+
+.calculadora-right .calcular .btn:hover {
+    color: white;
+    background-color: black;
+}
+
+.calculadora-right #infos {
+    display: flex;
+    justify-content: center;   
+}
+
+#infos #first_results span{
+    margin-bottom: 10px;
+}
+
+#infos #first_results {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 7px;
+    border: 2px solid rgb(77, 77, 77);
+}
+
+
+#infos #second_results {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 7px;
+    border: 2px solid rgb(77, 77, 77);
+}
+
+#infos #second_results span{
+    margin-bottom: 13px;
+}
+
+.eng-comiss img {
+    max-width: 40%;
+    border-radius: 3px;
+}
+
+.eng-comiss .eng-comiss-foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.eng-comiss .foto2 {
+    margin-top: 20px;
+}
+
+
+.eng-comiss .eng-comiss-text h4 {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+}
+
+.eng-comiss .eng-comiss-text p {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 70px;
+}
+
+#precisao-em-campo .foto6-7 img {
+    max-width: 80%;
+}
+
+#precisao-em-campo .foto6-7 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#precisao-em-campo .foto7-8 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+#precisao-em-campo .foto7-8 img {
+    max-width: 80%;
+}
+
+.linha {
+    width: 90%;
+    border-bottom: 1px solid white;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.linha-foto4 {
+    margin-bottom: 20px;
+}
+
+@media(max-width: 900px){
+    body {
+
+        max-width: 500px;
+    }
+
+    /* menu mobile */
+    .ul{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+        z-index: 3;
+    }
+
+    .ul.open{
+        clip-path: circle(141.2% at 100% 0);
+    }
+
+    .ul a{
+        margin: 10px 0;
+        font-size: 16px;
+    }
+    nav .menu-icon{
+        display: block;
+        top: 90px;
+        right: 40px;
+        
+        
+    }
+    nav .close-icon{
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 40px;
+        transition: 1s;
+    }
+    /* end menu mobile */
+    /* pagina home responsivo */
+
+    .box {
+        position: relative;
+        z-index: 1;
+        bottom: -200px;
+    }
+
+    .eng-comissionamen background-image {
+        left: 20%;
+    }
+
+    .faca-mais .faca-mais-text{
+        margin-top: 10px;
+        padding: 0 20px;
+        order: 1;  
+    }
+    .faca-mais .container{
+        flex-direction: column;
+    }
+    .clientes .container div{
+        flex-direction: column;
+    }
+    .faca-mais .faca-mais-text h3{
+        font-size: 48px;
+    }
+    .faca-mais .faca-mais-text,
+    .faca-mais .faca-mais-img{
+        width: 100%;
+    }
+    /* banner responsivo */
+    .banner .banner-text{
+        padding: 0;
+        margin: 80px;
+    }
+    .banner .banner-text h1{
+        font-size: 80px;
+    }
+    .banner .banner-text p{
+        font-size: 15px;
+    }
+    .depoimentos .card-item{
+        width: 100%;
+    }
+
+    .depoimentos .container p{
+        font-size: 20px;
+    }
+
+    /* PAG INDEX */
+    .container .nav .menu-icon {
+        display: flex;
+    }
+
+    .eng-comissionamento .info {
+        margin-left: 20px;
+    }
+
+    .eng-comissionamento .info h3 {
+        font-size: 25px;
+    }
+
+    .eng-comissionamento {
+            height: 50%;
+    }
+    
+    .eng-comissionam {
+        background-position: top 20% right 30%;
+    }
+
+    .eng-desenvolvimento {
+        background-position: top 20% right 70%;
+    }
+
+    .clientes .container .clientes {
+        flex-direction: column;
+        padding-bottom: 300px;
+        background-color: black;
+    }
+
+    .clientes .container .clientes .cliente{
+        margin-bottom: 20px;
+        border-radius: 9px;
+    }
+
+    /* END PAG INDEX */
+
+    /* SOBRE */
+    
+    .sobre .container{
+        padding-bottom: 180px;
+        flex-direction: column-reverse;
+        
+    }
+
+    .sobre .sepher-text img{
+        max-width: 90%;
+    }
+
+    .sobre .sepher-text{
+        margin-top: 40px;
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1px;
+    }
+
+    .sobre .sepher-text p {
+        font-size: 15px;
+    }
+
+    .sobre .sobre-img {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    .sobre .container .sobre-img img{
+        margin-top: -2000px;
+        justify-items: center;
+    }
+
+    .sobre .container .sobre-img {
+        margin: auto;
+        text-align: center;
+    }
+
+
+    .sobre .container .sobre-text h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .sobre .container .sobre-text {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .sobre .container .sobre-text .btn {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    /* END SOBRE */
+    
+    .wpp {
+        bottom: 6px;
+        right: 5px;
+    }
+
+    .wpp a img{
+        width: 100px;
+    }
+
+    header .container{
+        max-width: 830px;
+    }
+
+    
+
+    /* SERVICOS */
+
+    .servicos .container .rows-cards .row-card-item {
+        margin: 14px;
+    }
+
+    .servicos .container .rows-cards .row-card-item{
+        background-color: white;
+    }
+
+    .servicos .container .rows-cards .row-card-item p {
+        color: black;
+    }
+
+    .servicos .container h3 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    .servicos .container .rows-cards .row-card-item .lista{
+        color: black;
+        
+    }
+
+    .dados .container {
+        margin-left: 50px;
+    }
+    /* END SERVICOS
+
+    /* CALCULADORA SOLAR */
+
+    .back-calc .body .calculadora-left {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .back-calc .body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .back-calc .body .calculadora-left {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .back-calc .body .calculadora-left h1 {
+        margin-top: -200px;
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .back-calc .body .calculadora-left .descricao p{
+        font-size: 40px;
+        display: flex;
+        text-align: center;
+    }
+    /* END CALCULADORA SOLAR */
+            
+    /* pagina contato responsiva */
+    .contato .contato-info{
+        flex-direction: column-reverse;
+    }
+
+    .contato-info .right-side,
+    .contato-info .left-side{
+        width: 100%;
+    } 
+
+    .contato-info .right-side{
+        margin-bottom: 30px;
+    }
+    .banner .banner-text {
+        padding: 0;
+        margin: 20px;
+    }
+
+    .servicos .rows-cards{
+        justify-content: center;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    /* END PAG CONTATO */
+
+    /* TREINAMENTO */
+    .servicos .row-card-item ol {
+        color: black;
+    }
+    /* END TREINAMENTO */ 
+
+    /* CONTATO */
+    .contato div .contato-info .left-side {
+        background-color: white;  
+    }
+
+    .contato div .contato-info .left-side div p {
+        color: black;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .contato div .contato-info .left-side div .email {
+        font-size: 10px;
+    }
+
+    .contato div .contato-info .left-side div .email-foto {
+        margin-bottom: 20px;
+    }
+
+    .contato div .contato-info .left-side div .telefone-foto {
+        margin-bottom: 20px;
+    }
+
+    .contato div .contato-info .left-side div .endereco-foto {
+        margin-bottom: 25px;
+    }
+
+
+
+    .contato-info .left-side div i{
+        color: black;
+    }
+
+    .eng-comiss-foto img{
+        max-width: 80%;
+        
+    }
+
+    .linha {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .eng-comiss .eng-comiss-text p {
+        
+        text-align: left;
+        letter-spacing: 2px;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+}
+
+@media (max-width:500px) {
+    .banner .banner-text h1{
+        font-size: 50px;
+    }
+
+    .faca-mais .faca-mais-text h3{
+        font-size: 40px;
+    }
+}
